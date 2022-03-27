@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody rb;
     bool isGrounded=true;
     GameController gameController;
+    int score;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
             rb.AddForce(Vector3.up * jumpForce);
             isGrounded=false;
         }
-        
+        Debug.Log(Mathf.Floor (transform.position.x));
         
         
     }

@@ -9,7 +9,7 @@ public class PlatformController : MonoBehaviour
     void Start()
     {
         platformSize = gameObject.transform.localScale.x;
-        Debug.Log(platformSize);
+       // Debug.Log(platformSize);
         
     }
 
